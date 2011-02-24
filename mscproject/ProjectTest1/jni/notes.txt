@@ -1,0 +1,25 @@
+TO DO#
+* FFT Improvements:
+ - sin/cos/tan lookup tables.
+ - precompute W's.
+ - maybe look for a better FFT algo before this.
+ 
+* Assembler:
+ - try out SIMD NEON instructions.
+
+* Tempo:
+ - IOI Histogram
+ - look for multiples of base (i.e. 0.5x, 2x, etc)
+ - beat strength evaluation?
+
+* Beat Detection:
+ - look at Machine learning and Agents course lectures
+ 
+* Time Stretching
+ - Get Phase Vocoder working
+ - 
+ 
+* General efficiency:
+ - Downsample value (basic)
+ - use QMF (Quadrature Mirror filter) e.g. Haar , CQF (Conjugate Quadrature Filter) - e.g Debauches
+ 

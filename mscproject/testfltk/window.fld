@@ -1,0 +1,64 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0109 
+header_name {.h} 
+code_name {.cpp}
+decl {\#include <iostream>} {} 
+
+decl {\#include <cstdlib>} {global
+} 
+
+decl {\#include <cstdio>} {global
+} 
+
+decl {\#include "callbacks.h"} {selected
+} 
+
+decl {using namespace std;} {} 
+
+Function {bt_callback(Fl_Widget*, void* userdata)} {open return_type {static void}
+} {
+  code {if(userdata == "test")
+	std::cout << "Testing" << std::endl;
+else if (userdata == "close")
+	exit(0);} {}
+} 
+
+Function {createWindow()} {open
+} {
+  Fl_Window window_main {
+    label {FLTK window 1} open
+    tooltip {main window} xywh {529 298 755 415} type Double box GTK_THIN_DOWN_BOX align 80 visible
+  } {
+    Fl_Input input {
+      label {Please enter value:}
+      xywh {145 10 150 25}
+    }
+    Fl_Button btnTest {
+      label Test
+      user_data {"test"}
+      callback bt_callback
+      xywh {10 100 100 25}
+    }
+    Fl_Return_Button btnClose {
+      label Close
+      user_data {"close"}
+      callback bt_callback
+      xywh {195 100 100 25}
+    }
+    Fl_Slider slider1 {
+      callback sldr_callback
+      xywh {303 11 25 117} maximum 255 step 1
+    }
+    Fl_Dial dial1 {
+      callback dial1_callback
+      xywh {333 10 25 25} maximum 255 step 1
+    }
+    Fl_Dial dial2 {
+      callback dial2_callback
+      xywh {334 38 25 25} maximum 255 step 1
+    }
+    Fl_Text_Display tdisp {
+      xywh {374 25 91 25}
+    }
+  }
+} 

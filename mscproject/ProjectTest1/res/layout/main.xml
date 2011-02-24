@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/testPassthru" android:text="PassThru direct"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/testMP3" android:text="MP3"></Button></LinearLayout>
+
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/testDisp     " android:text="text" android:visibility="gone"></TextView>
+<FrameLayout android:id="@+id/testGraphView" android:layout_width="fill_parent" android:layout_height="180px"></FrameLayout><FrameLayout android:id="@+id/sfFrame" android:layout_width="fill_parent" android:layout_height="20px" android:background="@drawable/bg_header"></FrameLayout>
+<FrameLayout android:id="@+id/cdFrame" android:layout_height="20px" android:layout_width="fill_parent" android:background="@drawable/bg_header"></FrameLayout><FrameLayout android:layout_height="20px" android:layout_width="fill_parent" android:background="@drawable/bg_header" android:id="@+id/wpdFrame"></FrameLayout>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/input_scaling_text" android:text="input level"></TextView><SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/input_scaling" android:max="500"></SeekBar><SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/sf_thresh" android:max="10"></SeekBar><SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/cd_thresh" android:max="10"></SeekBar><SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/wpd_thresh" android:max="10"></SeekBar>
+
+<TextView android:text="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tempo_text"></TextView>
+</LinearLayout>

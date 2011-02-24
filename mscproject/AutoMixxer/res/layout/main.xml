@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="fill_parent">
+
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/this_data" android:orientation="vertical" android:layout_width="240px"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/this_fname" android:scrollHorizontally="true" android:text="filename"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/this_length_txt" android:text="Length: 3m 26s"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/this_tempo_txt" android:text="Tempo: 100BPM"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vol: 0.9" android:id="@+id/this_vol_txt"></TextView>
+<SeekBar android:layout_height="wrap_content" android:id="@+id/this_vol" android:layout_width="fill_parent" android:max="200"></SeekBar>
+
+<FrameLayout android:id="@+id/this_prg" android:background="@color/played" android:layout_height="5px" android:layout_width="5px"></FrameLayout>
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:id="@+id/next_data" android:orientation="vertical" android:layout_width="240px"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="filename" android:id="@+id/next_fname" android:scrollHorizontally="true"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Length: 3m 26s" android:id="@+id/next_length_txt"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tempo: 100BPM" android:id="@+id/next_tempo_txt"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/next_vol_txt" android:text="Vol: 0.9"></TextView><SeekBar android:layout_height="wrap_content" android:id="@+id/next_vol" android:layout_width="fill_parent" android:max="200"></SeekBar><FrameLayout android:background="@color/played" android:layout_height="5px" android:layout_width="5px" android:id="@+id/next_prg"></FrameLayout><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/next_stretch_ratio" android:text="Stretch: 1.0"></TextView>
+</LinearLayout>
+</LinearLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OverLap: 30s" android:id="@+id/overlap_txt"></TextView><SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/overlap_size" android:max="70"></SeekBar><LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play" android:id="@+id/play"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pause" android:id="@+id/stop"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&gt;&gt;" android:id="@+id/ff"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/analyse" android:text="Analyse"></Button>
+</LinearLayout>
+
+
+
+
+<ScrollView android:id="@+id/ScrollView01" android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/file_list" android:orientation="vertical"></LinearLayout></ScrollView>
+</LinearLayout>

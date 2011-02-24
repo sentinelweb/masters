@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:layout_height="wrap_content" android:text="Tempo" android:id="@+id/tt_tempo_lbl" android:layout_width="100px"/><TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tempo" android:id="@+id/tt_tempo_text"/></LinearLayout><LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:layout_height="wrap_content" android:id="@+id/tt_tempo_inst_lbl" android:layout_width="100px" android:text="Inst Tempo"/><TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tempo" android:id="@+id/tt_tempo_inst_text"/></LinearLayout>
+
+<Button android:layout_width="fill_parent" android:text="Tap" android:id="@+id/tt_tap_but" android:layout_height="200px"></Button>
+<SeekBar android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/tt_inst_len"></SeekBar><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="inst Len" android:id="@+id/tt_inst_len_txt"></TextView><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" android:id="@+id/tt_reset_but"></Button>
+
+
+</LinearLayout>

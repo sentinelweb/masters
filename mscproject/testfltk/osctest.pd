@@ -1,0 +1,16 @@
+#N canvas 1032 249 450 300 10;
+#X obj 225 73 dumpOSC 1111;
+#X obj 219 120 OSCroute /sldr;
+#X floatatom 219 156 5 0 0 0 - - -;
+#X obj 36 88 sendOSC;
+#X msg 31 34 connect localhost 1112;
+#X msg 61 55 send /sldr \$1;
+#X obj 63 9 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 10800 1;
+#X floatatom 159 10 5 0 0 0 - - -;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 5 0;
+#X connect 6 0 7 0;

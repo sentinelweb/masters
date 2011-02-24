@@ -1,0 +1,30 @@
+TO DO#
+* FFT Improvements:
+ - sin/cos/tan lookup tables. nogo.
+ - precompute W's. nogo.
+ - maybe look for a better FFT algo before this.
+ 
+* Assembler:
+ - try out SIMD NEON instructions.
+
+* Tempo:
+ - IOI Histogram. done.
+ - look for multiples of base (i.e. 0.5x, 2x, etc)
+ - beat strength evaluation?
+ - sum adjacent values in histogram to get max reigon. done.
+ - vary onset threshold based on stability of tempo value achieved
+
+* Beat Detection:
+ - look at Machine learning and Agents course lectures
+ 
+* Time Stretching
+ - Get Phase Vocoder working
+ - 
+ 
+* General efficiency:
+ - Downsample value (basic).done.
+ - use QMF (Quadrature Mirror filter) e.g. Haar , CQF (Conjugate Quadrature Filter) - e.g Debauches
+ 
+* Mixing
+ - when mixing downsample the part with the lowset volume.
+ 

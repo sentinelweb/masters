@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <drawable name="translucent_background">#e0000000</drawable>
+ <drawable name="default_foreground">#ffd9ff00</drawable>
+ <drawable name="default_background">#ffa3d9ff</drawable>
+ 
+</resources>

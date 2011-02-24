@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="analyse_prg">#ff990000</color><color name="analysing">#ff000044</color><color name="analysed">#ff004400</color><color name="played">#ff009900</color>
+</resources>

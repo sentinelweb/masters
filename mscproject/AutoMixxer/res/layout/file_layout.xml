@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/file_name" android:text="filename" android:scrollHorizontally="true"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:id="@+id/file_size" android:text="5Mb"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/file_tempo" android:layout_below="@+id/file_name" android:text="--"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/file_length" android:layout_below="@+id/file_name" android:layout_alignParentRight="true" android:text="--"></TextView>
+
+<FrameLayout android:id="@+id/file_analysed_prg" android:layout_height="5px" android:layout_below="@+id/file_tempo" android:background="@color/analyse_prg" android:layout_width="10px"></FrameLayout>
+</RelativeLayout>
