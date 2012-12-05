@@ -23,6 +23,7 @@ import android.content.DialogInterface;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Display;
@@ -45,8 +46,8 @@ public class AutoMixActivity extends Activity {
 	static {
         System.loadLibrary("automix"); 
     }
-	static final String BASE = "/sdcard/test"; 
-	static final String APP_BASE = "/sdcard/AutoMix";
+	static final String BASE = "test"; 
+	static final String APP_BASE = "AutoMix";
 	File path = null;
 	AnalysisThread analysisThread = null;
 	SynthesisThread synthesisThread = null;
@@ -83,11 +84,11 @@ public class AutoMixActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) { 
         super.onCreate(savedInstanceState);
-        path = new File(APP_BASE);
+        path = new File(Environment.getExternalStorageDirectory().getAbsolutePath(),APP_BASE);
         if (!path.exists()) {  	path.mkdirs(); }
         setContentView(R.layout.main);
         LinearLayout filesCtnr = (LinearLayout)findViewById(R.id.file_list);  
-        File baseDir = new File(BASE);
+        File baseDir = new File(Environment.getExternalStorageDirectory().getAbsolutePath(),BASE);
         File[] list =  baseDir.listFiles();
         Vector<File> fileVec= new Vector<File>();
         for (int i=0;i<list.length;i++) {

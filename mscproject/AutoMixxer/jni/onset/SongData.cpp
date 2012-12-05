@@ -90,10 +90,10 @@ void SongData::tearDownOnsets(){
 			//delete beatMarks[i];
 			//delete beatTypes[i];
 			delete onsetssfHopsCorr[i];
-			if ((int)this->ioih[i]!=-1) {
+			if ((long)this->ioih[i]!=-1) {
 				delete ioih[i];// maybe not exist#
 			}
-			if ((int)this->beatData[i]!=-1) {
+			if ((long)this->beatData[i]!=-1) {
 				for (int j=0;j<beatDataSizes[i];j++) {
 					delete beatData[i][j];
 				}
